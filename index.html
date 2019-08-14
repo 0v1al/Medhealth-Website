@@ -7,36 +7,37 @@
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/99c8254f42.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>medhealth</title>
   </head>
   <body>
 
-    <header id="top">
+    <header id="top" class="jump">  
             <a href="#top" class="up-arrow"><i class="fas fa-chevron-up text-light up-arrow-text"></i></a>
             <div class="overlay"></div>
-            <div class="image"><img src="./image/bg-banner.jpg" alt="banner" class="bg-banner"></div>
+            <div class="image bg-banner"></div>
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top menu">
                 <div class="container menu">
                     <a class="navbar-brand" href="#"><img src="./image/logo.png" alt="logo" class="logo img-fluid"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse menu" id="navbarNav">
+                    <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ml-auto nav-items">
-                            <li class="nav-item active px-2">
-                                <a class="nav-link text-white active" id="#" href="#">HOME<span class="sr-only">(current)</span></a>
+                            <li class="nav-item px-2 l">
+                                <a class="nav-link text-white" id="s1" href="#top">HOME<span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link text-white" href="#">SERVICES</a>
+                            <li class="nav-item px-2 l">
+                                <a class="nav-link text-white" id="s2" href="#section2">SERVICES</a>
                             </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link text-white" href="#">ABOUT</a>
+                            <li class="nav-item px-2 l">
+                                <a class="nav-link text-white" id="s3" href="#about">ABOUT</a>
                             </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link text-white" href="#">TESTIMONIAL</a>
+                            <li class="nav-item px-2 l">
+                                <a class="nav-link text-white" id="s4" href="#testimonial">TESTIMONIAL</a>
                             </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link text-white" href="#">CONTACT</a>
+                            <li class="nav-item px-2 l">
+                                <a class="nav-link text-white" id="s5" href="#contact">CONTACT</a>
                             </li>
                         </ul>
                     </div>
@@ -46,15 +47,15 @@
                     <div class=" container-fluid text-center header-content">
                         <img src="./image/logo.png" alt="logo" class="logo-2 img-fluid mb-3">
                         <h1 class=" h1-header text-light">HEALTHCARE AT YOUR DESK!</h1>
-                        <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>   
-                        <a class="btn btn-header href="#">Make an Appointement</a>   
+                        <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>   
                     </div>
                 </section>
+                <a class="btn btn-header btn-make" href="#contact">Make an Appointement</a>   
                 <div class="arrow-header"><a href="#section2"><i class="fas fa-chevron-down arrow"></i></a></div>
     </header>
     
     <main>
-        <section id="section2" class="section-2 container-fluid">
+        <section id="section2" class="section-2 container-fluid jump">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
@@ -95,7 +96,7 @@
                             <div class="card-body p-4 card-bg">
                                 <h4 class="card-title">Emergency Case</h4>
                                 <p class="card-text mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, maxime! Eius suscipit ut blanditiis iste quisquam, nam officiis aliquam ducimus!</p>
-                                <a href="#" class="btn btn-bg text-light mt-4">READ MORE</a>
+                                <a href="#" class="btn btn-bg text-white mt-4">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -104,12 +105,12 @@
                             <div class="card-body p-4 card-bg">
                                     <h4 class="card-title">Emergency Case</h4>
                                     <p class="card-text mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, maxime! Eius suscipit ut blanditiis iste quisquam, nam officiis aliquam ducimus!</p>
-                                    <a href="#" class="btn btn-bg text-light mt-4">READ MORE</a>
+                                    <a href="#" class="btn btn-bg text-white mt-4">READ MORE</a>
                                 </div>
                             </div>
                     </div>
                     <div class="col-md-4">
-                            <div class="card">
+                            <div class="card h-100">
                                 <div class="card-body p-4 card-bg">
                                     <h4 class="card-title">Opening Hours</h4>
                                     <table class="table mt-4 text-light border border-white">
@@ -140,14 +141,14 @@
                     <div class="col-md-4">
                         <h3 class="ultimate-dream w-75">THE MEDILAP ULTIMATE DREAM</h3>
                         <p class="text-muted mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores tempora perferendis totam, dolor soluta ex.</p>
-                        <a href="#" class="btn btn-bg mt-4">Know more...</a>
+                        <a href="#" class="btn btn-bg my-4">Know more...</a>
                     </div>
                     <div class="col-md-1"></div>
                     <div class="col-md-6">
-                        <h4><span class="arrow-right"><i class="fas fa-chevron-right"></i></span>It's something important you want to know.</h4>
-                        <p class="text-muted mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus exercitationem nulla at reprehenderit dolorem natus!</p>
-                        <h4><span class="arrow-right mt-4"><i class="fas fa-chevron-right"></i></span>It's something important you want to know.</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus exercitationem nulla at reprehenderit dolorem natus!</p>
+                        <h4 class="h-arrow-right"><span class="arrow-right mt-4"><i class="fas fa-chevron-right"></i></span>It's something important you want to know.</h4>
+                        <p class="text-muted mt-4 h-arrow-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus exercitationem nulla at reprehenderit dolorem natus!</p>
+                        <h4 class="h-arrow-right"><span class="arrow-right mt-4"><i class="fas fa-chevron-right"></i></span>It's something important you want to know.</h4>
+                        <p class="text-muted h-arrow-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus exercitationem nulla at reprehenderit dolorem natus!</p>
                     </div>
                 </div>
             </div>
@@ -156,8 +157,8 @@
             <div class="container">
                 <h2 class="meet-doctors">MEET OUR DOCTORS!</h2>
                 <div class="row mt-4">
-                    <div class="col-md-3">
-                        <div class="card">
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="card card-med">
                             <img src="./image/doctor1.jpg" alt="doctor" class="img-fluid">
                             <div class="card-body">
                                 <h4 class="card-title">Jessica Wally</h4>
@@ -170,11 +171,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card">
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="card card-med">
                             <img src="./image/doctor2.jpg" alt="doctor" class="img-fluid">
                             <div class="card-body">
-                                <h4 class="card-title">Jessica Wally</h4>
+                                <h4 class="card-title">John Smith</h4>
                                 <p class="card-text">Doctor</p>
                                 <span>
                                     <a href="#"><i class="fab fa-facebook-f py-2 social-icon"></i></a>
@@ -184,11 +185,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card">
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="card card-doc card-med">
                             <img src="./image/doctor3.jpg" alt="doctor" class="img-fluid">
                                 <div class="card-body">
-                                    <h4 class="card-title">Jessica Wally</h4>
+                                    <h4 class="card-title">Jane Doe</h4>
                                     <p class="card-text">Doctor</p>
                                     <span>
                                         <a href="#"><i class="fab fa-facebook-f py-2 social-icon"></i></a>
@@ -198,11 +199,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card">
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="card card-doc card-med">
                             <img src="./image/doctor4.jpg" alt="doctor" class="img-fluid">
                             <div class="card-body">
-                                <h4 class="card-title">Jessica Wally</h4>
+                                <h4 class="card-title">John Doe</h4>
                                 <p class="card-text">Doctor</p>
                                 <span>
                                     <a href="#"><i class="fab fa-facebook-f py-2 social-icon"></i></a>
@@ -215,7 +216,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-6">
+        <section id="testimonial" class="section-6 jump">
             <div class="container-fluid section6-container">
                 <div class="container">
                     <h3 class="patients-words">SEE WHAT PATIENTS ARE SAYING?</h3>
@@ -250,7 +251,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-7">
+        <section id="about" class="section-7 jump">
             <div class="container-fluid p-4" style="background-color:#325C6A;">
                 <div class="container">
                     <div class="row mt-4">
@@ -260,16 +261,16 @@
                         </div>
                         <div class="col-md-4">
                             <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores suscipit officia alias ipsa tempore, ut ipsum, quaerat natus temporibus ex in aspernatur delectus nobis repellendus corrupti cupiditate laborum! Aliquid, modi saepe rem maxime eveniet amet aperiam repellat. Officiis, provident mollitia.</p>
-                            <span><p class="text-right font-weight-bold text-healthcare">-Medilap Healthcare</p></span>
+                            <span><p class="text-right font-weight-bold text-healthcare"><i>-Medilap Healthcare</i></p></span>
                         </div>
                         <div class="col-md-2"></div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section-8">
+        <section id="contact" class="section-8 jump">
             <div class="container">
-                <h2 class="contact-us">CONTACT US</h2>
+                <h2 class="contact-us mt-5">CONTACT US</h2>
                 <div class="row">
                     <div class="col-md-4">
                         <h4 class="my-4">Contact Info</h4>
@@ -304,20 +305,20 @@
         <div class="container-fluid footer">
             <div class="container">
                 <div class="row footer-row1">
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-4">
                         <h5 class="text-light">About Us</h5>
                         <p class="text-light mt-4">Praesent convallis tortor et enim laoreet, vel consectetur purus latoque penatibus et dis parturient.</p>
                     </div>
-                    <div class="col-md-4">
-                        <h5 class="text-light">Quick Links</h5>
+                    <div class="col-md-4 col-sm-4">
+                        <h5 class="text-light footer-links">Quick Links</h5>
                         <ul class="list-group text-light ml-5 mt-4">
                             <li><a href="#" class="text-light">Home</a></li>
                             <li><a href="#" class="text-light">Service</a></li>
                             <li><a href="#" class="text-light">Appointement</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-4">
-                        <h5 class="text-light">Follow Us</h5>       
+                    <div class="col-md-4 col-sm-4">
+                        <h5 class="text-light footer-follow">Follow Us</h5>       
                         <i class="fab fa-facebook-square fa-3x"></i>     
                         <i class="fab fa-google-plus-square fa-3x"></i>
                         <i class="fab fa-twitter-square fa-3x"></i>

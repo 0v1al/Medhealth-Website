@@ -12,6 +12,7 @@ html,
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -26,7 +27,7 @@ header {
     width: 100vw;
 }
 
-/*overlay*/
+/*!overlay*/
 header .overlay {
     position: absolute;
     width: 100%;
@@ -40,8 +41,9 @@ header .overlay {
     opacity: .8;
 }
 
-/*header bg image*/
+/*!header bg image*/
 header .bg-banner {
+    background-image: url('./image/bg-banner.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -49,10 +51,10 @@ header .bg-banner {
     height: 100vh;
     width: 100vw;
     position: absolute;
-    z-index: -2;
+    z-index: -3;
 }
 
-/*navbar*/
+/*!navbar*/
 .navbar-default {
     background-color: rgba(50, 92, 102, 0);
 }
@@ -60,7 +62,7 @@ header .bg-banner {
 .navbar-scroll {
     background-color: rgba(35, 78, 90, 0.9);
     transition: .3s all ease-in-out;
-    height: 8%;
+    padding: 0 1rem !important;
 }
 
 .navbar {   
@@ -80,8 +82,8 @@ header .bg-banner {
     position: absolute;
     width: 0;
     height: .11rem;
-    left: 50%;
-    bottom: 0;
+    left: 0;
+    bottom: -0.1rem;
     background-color: var(--redColor);
     transition: .3s all ease-in-out;
 }
@@ -91,7 +93,11 @@ header .bg-banner {
     left: 0;
 }
 
-/*logo*/
+a.active {
+    border-bottom: .11rem solid var(--redColor);
+}
+
+/*!logo*/
 .logo {
     height: 8rem;
     width: 8rem;
@@ -102,7 +108,7 @@ header .bg-banner {
     width: 11rem;
 }
 
-/*section-1 from header*/
+/*!section-1 from header*/
 .section-1 {
     position: relative;
     width: 50%;
@@ -123,7 +129,7 @@ header .bg-banner {
     font-size: 2.2rem;
 }
 
-/*button header*/
+/*!button header*/
 
 .btn-header {
     background-color: #0DADAD !important;
@@ -136,7 +142,15 @@ header .bg-banner {
     background-color: rgb(13, 150, 150) !important;
 }
 
-/*arrow down header*/
+.btn-make {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 8rem;
+}
+
+/*!arrow down header*/
 .arrow-header {
     position: absolute;
     bottom: 5%;
@@ -152,7 +166,7 @@ header .bg-banner {
     cursor: pointer;
 }
 
-/*section-2 from main*/
+/*!section-2 from main*/
 
 main {
     position: relative;
@@ -180,7 +194,7 @@ main {
     margin-top: 2rem;
 }
 
-/*section-3*/
+/*!section-3*/
 .section-3 {
     margin-top: 5rem;
 }
@@ -197,7 +211,7 @@ main {
     outline: none;
 }
 
-/*section-4*/
+/*!section-4*/
 .section-4 {
     margin-top: 5rem;
 }
@@ -225,7 +239,7 @@ main {
     background-color: var(--redColor);
 }
 
-/*section-5*/
+/*!section-5*/
 
 .section-5 {
     margin-top: 5rem;
@@ -248,12 +262,12 @@ main {
     color: rgb(38, 85, 126);
 }
 
-/*section-6 dialog-box*/
+/*!section-6 dialog-box*/
 .dialog-box {
     background: #fff;
-    padding: 14px 24px;
-    margin-bottom: 20px;
-    box-shadow: 3px 3px 2px 0 rgba(0, 0, 0, .18);
+    padding: 0.875rem 1.5rem;
+    margin-bottom: 1.3rem;
+    box-shadow: 0.1875rem 0.1875rem 1.125rem 0 rgba(0, 0, 0, .18);
     position: relative;
 }
 
@@ -263,13 +277,13 @@ main {
     transform: rotate(45deg);
     width: 0px;
     height: 0px;
-    bottom: -30px;
-    left: 45px;
+    bottom: -1.875rem;
+    left: 2.8125rem;
     border-style: solid;
-    border-width: 15px;
+    border-width: 0.9375rem;
     border-color: transparent;
     z-index: -1;
-    box-shadow: 3px -13px 5px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: 0.1875rem -0.8125rem 0.3125rem 0 rgba(0, 0, 0, 0.18);
     border-left: 0;
 }
 
@@ -281,10 +295,10 @@ main {
     border-style: solid;
     border-color: transparent;
     border-left: 0;
-    bottom: -40px;
-    left: 56px;
+    bottom: -2.5rem;
+    left: 3.5rem;
     border-top-color: #fff;
-    border-width: 20px;
+    border-width: 1.25rem;
 }
 
 :after, :before {
@@ -293,15 +307,15 @@ main {
 
 .dialog-box-details h3 {
     display: inline-block;
-    line-height: 22px;
+    line-height: 1.375rem;
     font-weight: 600;
     color: #000;
-    margin-top: 8px;
+    margin-top: 0.5rem;
 }
 
 .dialog-box-details h3 > span {
     display: block;
-    line-break: 16px;
+    line-break: 1rem;
     font-weight: 400;
 }
 
@@ -334,7 +348,7 @@ main {
     height: 3rem;
 }
 
-/*up arrow*/
+/*!up arrow*/
 .up-arrow {
     position: fixed;
     cursor: pointer;
@@ -346,7 +360,7 @@ main {
     z-index: 3;
     border-radius: .2rem;
     text-align: center;
-    transition: .5s all ease-in-out;
+    transition: 1s all ease-in-out;
     display: none;
 }
 
@@ -388,9 +402,9 @@ main {
 }
 
 
-/*section-7*/
+/*!section-7*/
 
-/*section-8*/
+/*!section-8*/
 
 .section-8 {
     margin-top: 5rem;
@@ -424,7 +438,7 @@ main {
     font-size: 1.5rem;
 }
 
-/*footer*/
+/*!footer*/
 
 footer {
     margin-top: 5rem;
@@ -463,4 +477,134 @@ footer {
 .hr {
     opacity: .1;
     width: 100%;
+}
+
+.card-doc {
+    margin-top: 0 !important;
+}
+
+/*!media queries*/
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 8px;
+    }
+    .btn-make {
+        margin-top: 12rem;
+    }
+    .h-arrow-right {
+        margin-left: 4rem;
+        margin-top: 1.5rem;
+    }
+    .card-doc {
+        margin-top: 1rem;
+    }
+    .dialog-box {
+        margin-top: 1.3rem;
+    }
+    .section-2 {
+        margin-top: 2rem;
+    }
+    .h1-header {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .logo-2 {
+        width: 16rem;
+        height: 16rem;
+    }
+    .footer-follow,
+    .footer-links {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    html {
+        font-size: 12px;
+    }
+    .btn-make {
+        margin-top: 12rem;
+    }
+    .h-arrow-right {
+        margin-left: 4rem;
+        margin-top: 1.5rem;
+    }
+    .card-doc {
+        margin-top: 1rem;
+    }
+    .dialog-box {
+        margin-top: 1.3rem;
+    }
+    .section-2 {
+        margin-top: 2rem;
+    }
+    .h1-header {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    .logo-2 {
+        width: 16rem;
+        height: 16rem;
+    }
+}
+
+@media screen and (min-width: 621px) {
+    html {
+        font-size: 14px;
+    }
+    .btn-make {
+        margin-top: 12rem;
+    }
+    .h-arrow-right {
+        margin-left: 4rem;
+        margin-top: 1.5rem;
+    }
+    .card-doc {
+        margin-top: 1rem;
+    }
+    .dialog-box {
+        margin-top: 1.3rem;
+    }
+    .section-2 {
+        margin-top: 2rem;
+    }
+    .h1-header {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .logo-2 {
+        width: 16rem;
+        height: 16rem;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    html {
+        font-size: 15px;
+    }
+    .btn-make {
+        margin-top: 10rem;
+    }
+    .h-arrow-right {
+        margin-left: 4rem;
+        margin-top: 1.5rem;
+    }
+    .card-doc {
+        margin-top: 1rem;
+    }
+    .dialog-box {
+        margin-top: 1.3rem;
+    }
+    .section-2 {
+        margin-top: 2rem;
+    }
+    .h1-header {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .logo-2 {
+        width: 16rem;
+        height: 16rem;
+    }
 }
